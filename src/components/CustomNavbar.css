@@ -1,14 +1,25 @@
 .navbar-nav {
-    justify-content: center;
-    
-  }
-  .navbar{
+  justify-content: center;
+  
+}
+
+.navbar {
   background-color: #1E1E1F;
-  }
-  .nav-link {
-    margin: 0 15px;
-    color: antiquewhite;
-  }
-  .sidebar{
-    
-  }
+  margin-left: 1rem;
+  width: 61rem;
+  border-radius: 10px;
+  border: 1px solid antiquewhite;
+}
+
+.nav-link {
+  margin: 0 15px;
+  color: antiquewhite;
+}
+
+.nav-link:hover {
+  color: rgb(238, 181, 111);
+}
+
+.nav-link.active {
+  color: rgb(221, 152, 66) !important;
+}

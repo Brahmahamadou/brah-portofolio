@@ -1,0 +1,6 @@
+.custom-card {
+    width: 100%; /* Full width within the column */
+    max-width: 18rem; /* Adjust this value as needed */
+    margin: 0; /* Center the card within the column */
+  }
+  

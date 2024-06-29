@@ -1,0 +1,7 @@
+.mybut{
+    background-color: #1E1E1F !important;
+    border-color: antiquewhite;
+}
+.mybut:hover{
+    border-color: white;
+}

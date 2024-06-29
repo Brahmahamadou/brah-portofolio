@@ -9,6 +9,7 @@
 .main-container {
   display: flex;
   flex: 1;
+  
 }
 
 .content {
@@ -20,4 +21,6 @@
 }
 .app-container{
   display: flex;
+  width: 80rem;
+
 }
