@@ -1,11 +1,19 @@
+import React, { useState } from 'react';
 import './App.css';
-import MyNavbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import CustomNavbar from './components/CustomNavbar';
+import Content from './components/Content';
 
 function App() {
+  const [activeItem, setActiveItem] = useState('home');
+
   return (
-    <div className="App">
-     <MyNavbar />
-      {/* Autres composants ou contenu de ton application */}
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <CustomNavbar setActiveItem={setActiveItem} />
+        <Content activeItem={activeItem} />
+      </div>
     </div>
   );
 }
