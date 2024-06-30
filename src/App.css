@@ -9,7 +9,6 @@
 .main-container {
   display: flex;
   flex: 1;
-  
 }
 
 .content {
@@ -19,8 +18,57 @@
   justify-content: center;
   align-items: center;
 }
-.app-container{
+
+.app-container {
   display: flex;
   width: 80rem;
+  margin: 0 auto; /* Centre l'app-container horizontalement */
+}
 
+@media (max-width: 1200px) {
+  .app-container {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-container {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    width: 50rem;
+    flex-direction: column; /* Change la direction en colonne pour les petits écrans */
+  }
+  .main-content {
+    padding: 10px;
+  }
+
+  .sidebar {
+    display: none; /* Cache la sidebar sur les petits écrans */
+  }
+}
+
+@media (max-width: 576px) {
+  .app-container {
+    width: 100%; /* Utilise 100% de la largeur disponible pour les très petits écrans */
+    padding: 0 10px;
+  }
+
+  .navbar {
+    display: flex; /* Assurez-vous que la navbar est visible */
+    width: 100%;
+  }
+}
+
+.footer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: block; /* Affiche le footer sur les petits écrans */
+  }
 }

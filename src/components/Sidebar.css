@@ -10,9 +10,11 @@
   height: 40rem;
   border: 1px solid antiquewhite;
 }
-.h5{
-  margin-top: -10px
+
+.h5 {
+  margin-top: -10px;
 }
+
 .logo {
   margin-bottom: 20px;
   border-radius: 10px !important;
@@ -23,6 +25,7 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -35,7 +38,6 @@
 
 .social-links {
   display: flex;
-
   gap: 10px;
 }
 
@@ -47,4 +49,10 @@
 
 .social-icon a {
   color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
