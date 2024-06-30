@@ -1,5 +1,40 @@
-.content{
-    color:aliceblue;
+/* Home.css */
+
+.content {
+    color: aliceblue;
     display: flex;
     flex-direction: column;
-}
+  }
+  
+  .entete {
+    margin-bottom: 1rem;
+  }
+  
+  .services {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .frontend, .backend {
+    width: 20rem;
+    background-color: #1E1E1F;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  h4 {
+    margin-bottom: 0.5rem;
+  }

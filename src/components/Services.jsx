@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import { Container, Form, Button, Col, Row, Spinner, Alert } from 'react-bootstrap';
 import * as Yup from 'yup';
 import './Services.css'; 
+
 const ContactMeSection = () => {
   const [response, setResponse] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
@@ -61,6 +62,7 @@ const ContactMeSection = () => {
               <Form.Control
                 type="text"
                 name="firstName"
+                className="custom-input"
                 {...formik.getFieldProps('firstName')}
                 isInvalid={formik.touched.firstName && !!formik.errors.firstName}
               />
@@ -73,6 +75,7 @@ const ContactMeSection = () => {
               <Form.Control
                 type="email"
                 name="email"
+                className="custom-input"
                 {...formik.getFieldProps('email')}
                 isInvalid={formik.touched.email && !!formik.errors.email}
               />
@@ -85,6 +88,7 @@ const ContactMeSection = () => {
               <Form.Control
                 as="select"
                 name="type"
+                className="custom-input"
                 {...formik.getFieldProps('type')}
                 isInvalid={formik.touched.type && !!formik.errors.type}
               >
@@ -102,6 +106,7 @@ const ContactMeSection = () => {
                 as="textarea"
                 name="comment"
                 rows={5}
+                className="custom-input"
                 {...formik.getFieldProps('comment')}
                 isInvalid={formik.touched.comment && !!formik.errors.comment}
               />

@@ -42,7 +42,7 @@ function Sidebar() {
           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={30} />
           </a>
-        </div>@
+        </div>
         <div className="social-icon">
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />

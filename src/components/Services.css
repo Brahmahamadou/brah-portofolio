@@ -1,7 +1,18 @@
-.mybut{
+.mybut {
     background-color: #1E1E1F !important;
     border-color: antiquewhite;
 }
-.mybut:hover{
+
+.mybut:hover {
     border-color: white;
+}
+
+.custom-input {
+    background-color: #1E1E1F;
+    border-color: antiquewhite;
+    color: white;
+}
+
+.custom-input::placeholder {
+    color: antiquewhite;
 }
