@@ -8,15 +8,18 @@
   border-radius: 10px;
   padding: 20px;
   height: 40rem;
-  border: 1px solid antiquewhite;
+  box-shadow: 0px 0px 2px 0px rgb(251, 218, 175); /* Ajout de l'ombre */
+}
+
+.mail a {
+  color: antiquewhite;
 }
 
 .h5 {
   margin-top: -10px;
 }
 
-.logo {
-  margin-bottom: 20px;
+.logo img {
   border-radius: 10px !important;
 }
 

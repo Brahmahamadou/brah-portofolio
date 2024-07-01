@@ -1,6 +1,35 @@
+/* Card.css */
+
 .custom-card {
-    width: 100%; /* Full width within the column */
-    max-width: 18rem; /* Adjust this value as needed */
-    margin: 0; /* Center the card within the column */
-  }
-  
+  width: 100%; /* Full width within the column */
+  max-width: 18rem; /* Adjust this value as needed */
+  margin: 0; /* Center the card within the column */
+  background-color: #1D1D1E;
+  border-color: antiquewhite;
+  color: #ffffff;
+}
+
+.custom-button {
+  background-color: #2B2B2C;
+  border-color: #1E1E1F;
+  color: #ffffff;
+}
+
+.custom-button:hover {
+  background-color: #ffffff;
+  border-color: antiquewhite;
+  color: #1E1E1F; /* Change text color on hover if needed */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description {
+  background-color: #1D1D1E;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: antiquewhite;
+}

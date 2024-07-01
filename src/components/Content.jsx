@@ -1,33 +1,37 @@
-// Content.jsx
 import React from 'react';
-import Home from './Home'; // Importer vos composants nécessaires
+import Home from './Home';
 import About from './About';
 import Service from './Services';
 import Contact from './Contact';
-import Footer from './Footer'; // Importer le Footer
+import Footer from './Footer';
+import Resume from './Resume'; 
 
 function Content({ activeItem }) {
+
   const renderContent = () => {
     switch (activeItem) {
       case 'home':
         return <Home />;
-      case 'about':
+      case 'resume':
+        return <Resume />;
+      case 'projects':
         return <About />;
-      case 'services':
+      case 'contacter':
         return <Service />;
-      case 'contact':
+      case 'bloging':
         return <Contact />;
       default:
-        return <div>Home Content</div>; // Contenu par défaut si aucun cas ne correspond
+        return <div>Home Content</div>;
     }
   };
 
   return (
     <div className="content">
       {renderContent()}
-      <Footer className="footer" /> {/* Ajouter le Footer */}
+      <Footer className="footer" />
     </div>
   );
 }
+
 
 export default Content;

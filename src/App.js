@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import CustomNavbar from './components/CustomNavbar';
-import Content from './components/Content';
+import Content from './components/Content'; // Assurez-vous de l'importation correcte
 
 function App() {
   const [activeItem, setActiveItem] = useState('home');
@@ -12,7 +12,7 @@ function App() {
       <Sidebar />
       <div className="main-content">
         <CustomNavbar setActiveItem={setActiveItem} />
-        <Content activeItem={activeItem} />
+        <Content activeItem={activeItem} /> {/* Utilisation de Content avec activeItem */}
       </div>
     </div>
   );

@@ -21,11 +21,14 @@ function Sidebar() {
       <div className="contact-info">
         <div className="contact-item">
           <FaEnvelope size={20} />
-          <span className="contact-text">mahamadoubrah672@gmail.com</span>
+          <span className="contact-text mail">{" "}
+            <a href="mailto:mahamadoubrah672@gmail.com">
+              mahamadoubrah672@gmail.com
+            </a></span>
         </div>
         <div className="contact-item">
           <FaPhone size={20} />
-          <span className="contact-text">99956147</span>
+          <span className="contact-text">(+227) 92004099</span>
         </div>
         <div className="contact-item">
           <FaMapMarkerAlt size={20} />

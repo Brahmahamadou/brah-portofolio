@@ -1,40 +1,73 @@
-/* Home.css */
-
 .content {
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .entete {
-    margin-bottom: 1rem;
-  }
-  
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.entete {
+  margin-bottom: 1rem;
+}
+.contenu{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
+}
+.entete a {
+  color: aliceblue;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.frontend,
+.backend {
+  width: 20rem; /* Limite la largeur maximale pour éviter une largeur excessive sur grands écrans */
+  background-color: #1e1e1f;
+  height: 12rem;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+.frontend:hover,
+.backend:hover {
+  border: 1px solid antiquewhite; /* Ajoute une bordure blanche au survol */
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
   .services {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .frontend, .backend {
-    width: 20rem;
-    background-color: #1E1E1F;
-    height: 10rem;
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: antiquewhite;
-  }
-  
-  .icons {
-    display: flex;
+    flex-direction: column; /* Affiche les services en colonne sur les petits écrans */
     gap: 1rem;
-    margin-top: 1rem;
   }
-  
-  h4 {
-    margin-bottom: 0.5rem;
+
+  .frontend,
+  .backend {
+    max-width: 100%; 
+    width: auto; 
   }
+  .digit{
+    height: 15rem;
+  }
+ .contenu{
+  margin: auto;
+ }
+}
