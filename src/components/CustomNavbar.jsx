@@ -21,7 +21,7 @@ function CustomNavbar({ setActiveItem }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" onSelect={(selectedKey) => setActiveItem(selectedKey)}>
             <Nav.Link eventKey="home">À propos</Nav.Link>
-            <Nav.Link eventKey="resume">Resume</Nav.Link>
+            <Nav.Link eventKey="resume">CV</Nav.Link>
             <Nav.Link eventKey="projects">Projects</Nav.Link>
             <Nav.Link eventKey="contacter">Contact Me</Nav.Link>
             <Nav.Link eventKey="bloging">Blog</Nav.Link>

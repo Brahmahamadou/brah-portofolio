@@ -16,22 +16,29 @@ function Sidebar() {
           alt="Logo"
         />
       </div>
-      <h5>Je Suis Mahamadou</h5>
+      <h5>Mahamadou</h5>
       <h5 className='h5'> Moussa Brah</h5>
       <div className="contact-info">
         <div className="contact-item">
-          <FaEnvelope size={20} />
+          <div className="icon">
+          <FaEnvelope className='myicon' size={20} />
+          </div>
+          
           <span className="contact-text mail">{" "}
             <a href="mailto:mahamadoubrah672@gmail.com">
               mahamadoubrah672@gmail.com
             </a></span>
         </div>
         <div className="contact-item">
-          <FaPhone size={20} />
+        <div className="icon">
+        <FaPhone className='myicon' size={20} />          
+        </div>
           <span className="contact-text">(+227) 92004099</span>
         </div>
         <div className="contact-item">
-          <FaMapMarkerAlt size={20} />
+        <div className="icon">
+        <FaMapMarkerAlt className='myicon' size={20} />         
+        </div>
           <span className="contact-text">Niamey</span>
         </div>
       </div>

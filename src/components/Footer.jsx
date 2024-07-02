@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-section">
-        <p>Suivez moi via mes differents comptes reseaux sociaux</p>
+        <p>Retrouvez moi sur mes differents comptes reseaux sociaux</p>
         <div className="social-icons">
           {socials.map((social, index) => (
             <a

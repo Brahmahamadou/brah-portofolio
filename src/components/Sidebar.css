@@ -4,7 +4,7 @@
   align-items: center;
   gap: 20px;
   background-color: #1E1E1F;
-  color: antiquewhite;
+  color: aliceblue;
   border-radius: 10px;
   padding: 20px;
   height: 40rem;
@@ -12,7 +12,7 @@
 }
 
 .mail a {
-  color: antiquewhite;
+  color:aliceblue;
 }
 
 .h5 {
@@ -33,6 +33,25 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.icon{
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 10px;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.myicon {
+  color: antiquewhite !important;
+  animation: bounce 2s infinite;
+  cursor: pointer;
 }
 
 .contact-text {

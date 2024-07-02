@@ -40,7 +40,7 @@
 
 @media (max-width: 768px) {
   .app-container {
-    width: 50rem;
+    width: 100%;
     flex-direction: column; /* Change la direction en colonne pour les petits écrans */
   }
   .main-content {
@@ -61,6 +61,18 @@
   .navbar {
     display: flex; /* Assurez-vous que la navbar est visible */
     width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .app-container {
+    width: 100%; /* Utilise 100% de la largeur disponible pour les très petits écrans */
+    
+  }
+
+  .navbar {
+    display: flex; /* Assurez-vous que la navbar est visible */
+    width: 100%;
+
   }
 }
 

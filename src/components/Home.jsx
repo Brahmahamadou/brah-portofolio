@@ -66,7 +66,7 @@ function Home() {
             </div>
           </div>
           <div className="backend">
-            <h4>Backend</h4>
+            <h4></h4>
             <div className="icons">
               <FontAwesomeIcon icon={faNode} size="2x" />
               <FontAwesomeIcon icon={faServer} size="2x" />
