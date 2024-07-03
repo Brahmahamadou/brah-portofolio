@@ -24,7 +24,7 @@ const ContactMeSection = () => {
     onSubmit: async (values) => {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:5000/services', {
+        const response = await fetch('http://localhost:5001/services', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const ContactMeSection = () => {
 
   const sendEmailNotification = async (formData) => {
     try {
-      const emailResponse = await fetch('http://localhost:5000/send-email', {
+      const emailResponse = await fetch('http://localhost:5001/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
