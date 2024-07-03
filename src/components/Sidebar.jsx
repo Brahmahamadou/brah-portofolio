@@ -44,22 +44,22 @@ function Sidebar() {
       </div>
       <div className="social-links">
         <div className="social-icon">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/mahamadou.moussabrah" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={30} />
           </a>
         </div>
         <div className="social-icon">
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/MahamadouBrah67" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={30} />
           </a>
         </div>
         <div className="social-icon">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/mahamadoubrah67" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={30} />
           </a>
         </div>
         <div className="social-icon">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/mahamadou-moussa-brah-824735267/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={30} />
           </a>
         </div>

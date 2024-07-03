@@ -24,7 +24,7 @@ const ContactMeSection = () => {
     onSubmit: async (values) => {
       setIsLoading(true);
       try {
-        const response = await fetch('https://example.com/contactme', {
+        const response = await fetch('http://localhost:5000/services', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -35,6 +35,7 @@ const ContactMeSection = () => {
         setResponse(data);
         if (data.type === 'success') {
           formik.resetForm();
+          sendEmailNotification(values); // Appel de la fonction pour envoyer l'e-mail
         }
       } catch (error) {
         setResponse({ type: 'error', message: 'Something went wrong' });
@@ -43,9 +44,28 @@ const ContactMeSection = () => {
     },
   });
 
+  const sendEmailNotification = async (formData) => {
+    try {
+      const emailResponse = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          recipientEmail: 'mahamadoubrah672@gmail.com', // Remplacez par votre adresse e-mail
+        }),
+      });
+      const emailData = await emailResponse.json();
+      console.log('Email notification response:', emailData);
+    } catch (error) {
+      console.error('Failed to send email notification:', error);
+    }
+  };
+
   useEffect(() => {
     if (response) {
-      // You can add alert logic here
+      // Vous pouvez ajouter ici une logique d'alerte ou de notification pour l'utilisateur
       alert(response.message);
     }
   }, [response]);
@@ -93,7 +113,6 @@ const ContactMeSection = () => {
                 isInvalid={formik.touched.type && !!formik.errors.type}
               >
                 <option value="hireMe">Freelance project proposal</option>
-                <option value="openSource">Open source consultancy session</option>
                 <option value="other">Other</option>
               </Form.Control>
               <Form.Control.Feedback type="invalid">

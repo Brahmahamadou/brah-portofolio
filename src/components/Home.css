@@ -12,10 +12,6 @@
   flex-direction: column;
   margin-right: 15rem;
 }
-.entete a {
-  color: aliceblue;
-}
-
 .services {
   display: flex;
   flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */

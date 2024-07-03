@@ -1,5 +1,4 @@
 /* App.css */
-
 .App {
   display: flex;
   flex-direction: column;
@@ -25,11 +24,12 @@
   margin: 0 auto; /* Centre l'app-container horizontalement */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .app-container {
     width: 70rem;
     margin-top: 0;
   }
+ 
 }
 
 @media (max-width: 992px) {
@@ -41,14 +41,18 @@
 @media (max-width: 768px) {
   .app-container {
     width: 100%;
-    flex-direction: column; /* Change la direction en colonne pour les petits écrans */
+    flex-direction: column;
   }
   .main-content {
     padding: 10px;
   }
-
   .sidebar {
     display: none; /* Cache la sidebar sur les petits écrans */
+  }
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
   }
 }
 
@@ -56,6 +60,17 @@
   .app-container {
     width: 100%; /* Utilise 100% de la largeur disponible pour les très petits écrans */
     padding: 0 10px;
+    
+  }
+
+  .navbar {
+    display: flex; /* Assurez-vous que la navbar est visible */
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .app-container {
+    width: 100%;
   }
 
   .navbar {
@@ -82,6 +97,7 @@
 
 @media (max-width: 768px) {
   .footer {
-    display: block; /* Affiche le footer sur les petits écrans */
+    display: block;
+    margin-bottom: 0;
   }
 }

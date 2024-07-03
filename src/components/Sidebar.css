@@ -73,6 +73,9 @@
   color: antiquewhite;
 }
 
+.social-icon a:hover {
+  color: rgb(237, 164, 69);
+}
 @media (max-width: 768px) {
   .sidebar {
     display: none;
