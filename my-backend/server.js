@@ -15,11 +15,8 @@ app.use(bodyParser.json());
 app.post('/services', (req, res) => {
   const { firstName, email, type, comment } = req.body;
 
-  // Process the form data here (e.g., save to a database, send an email, etc.)
-
   console.log('Form data received:', { firstName, email, type, comment });
 
-  // Send a response back to the client
   res.json({ type: 'success', message: 'Form submitted successfully!' });
 });
 
@@ -27,24 +24,21 @@ app.post('/services', (req, res) => {
 app.post('/send-email', async (req, res) => {
   const { firstName, email, type, comment, recipientEmail } = req.body;
 
-  // Configure your email transporter
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USER, // Utiliser la variable d'environnement pour l'utilisateur
-      pass: process.env.EMAIL_PASS, // Utiliser la variable d'environnement pour le mot de passe
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
-  // Configure email options
   let mailOptions = {
-    from: process.env.EMAIL_USER, // Utiliser la variable d'environnement pour l'email de l'expéditeur
-    to: recipientEmail, // Email du destinataire
+    from: process.env.EMAIL_USER,
+    to: recipientEmail,
     subject: 'New Contact Form Submission',
     text: `Name: ${firstName}\nEmail: ${email}\nType: ${type}\nMessage: ${comment}`,
   };
 
-  // Send the email
   try {
     await transporter.sendMail(mailOptions);
     res.json({ type: 'success', message: 'Email sent successfully!' });
@@ -54,7 +48,6 @@ app.post('/send-email', async (req, res) => {
   }
 });
 
-// Route to handle GET requests to the root URL
 app.get('/', (req, res) => {
   res.send('Server is running');
 });

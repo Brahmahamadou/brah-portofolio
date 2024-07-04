@@ -35,7 +35,7 @@ const ContactMeSection = () => {
         setResponse(data);
         if (data.type === 'success') {
           formik.resetForm();
-          sendEmailNotification(values); // Appel de la fonction pour envoyer l'e-mail
+          sendEmailNotification(values);
         }
       } catch (error) {
         setResponse({ type: 'error', message: 'Something went wrong' });
@@ -65,8 +65,10 @@ const ContactMeSection = () => {
 
   useEffect(() => {
     if (response) {
-      // Vous pouvez ajouter ici une logique d'alerte ou de notification pour l'utilisateur
       alert(response.message);
+      if (response.type === 'success') {
+        setTimeout(() => setResponse(null), 5000); // Efface l'alerte après 5 secondes
+      }
     }
   }, [response]);
 
