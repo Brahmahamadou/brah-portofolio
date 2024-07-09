@@ -16,3 +16,7 @@
 .custom-input::placeholder {
     color: antiquewhite;
 }
+
+.text-white {
+    color: white;
+}

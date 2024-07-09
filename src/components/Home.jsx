@@ -10,8 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faServer,
-  faChartLine, // Importation de faChartLine depuis les icônes solides
-  faPalette, // Importation de faPalette depuis les icônes solides
+  faChartLine,
+  faPalette,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
@@ -39,7 +39,7 @@ function Home() {
       <div className="contenu">
         <h2>Mes Services</h2>
         <div className="services">
-          <div className="frontend">
+          <div className="service-card">
             <h4>Frontend</h4>
             <div className="icons">
               <FontAwesomeIcon icon={faHtml5} size="2x" />
@@ -47,27 +47,40 @@ function Home() {
               <FontAwesomeIcon icon={faJs} size="2x" />
               <FontAwesomeIcon icon={faReact} size="2x" />
             </div>
+            <p>
+              Création d'interfaces utilisateur réactives et interactives en utilisant HTML, CSS, JavaScript et React. 
+              Expérience dans le développement d'applications web modernes avec des pratiques de codage propres et maintenables.
+            </p>
           </div>
-          <div className="backend">
+          <div className="service-card">
             <h4>Backend</h4>
             <div className="icons">
               <FontAwesomeIcon icon={faNode} size="2x" />
               <FontAwesomeIcon icon={faServer} size="2x" />
             </div>
+            <p>
+              Développement de serveurs et d'API RESTful avec Node.js et Express. Gestion des bases de données et mise en place de solutions de stockage et de récupération de données sécurisées.
+            </p>
           </div>
         </div>
         <div className="services">
-          <div className="frontend digit">
-            <h5>Marketing Digital</h5>
+          <div className="service-card">
+            <h4>Marketing Digital</h4>
             <div className="icons">
               <FontAwesomeIcon icon={faChartLine} size="2x" />
             </div>
+            <p>
+              Stratégies de marketing digital pour accroître la visibilité et l'engagement en ligne. Compétences en SEO, gestion de campagnes publicitaires et analyse des performances.
+            </p>
           </div>
-          <div className="backend">
+          <div className="service-card">
             <h4>Graphic Design</h4>
             <div className="icons">
               <FontAwesomeIcon icon={faPalette} size="2x" />
             </div>
+            <p>
+              Création de visuels attrayants et professionnels pour le web et l'impression. Expertise en conception de logos, bannières, affiches et autres supports graphiques.
+            </p>
           </div>
         </div>
       </div>
