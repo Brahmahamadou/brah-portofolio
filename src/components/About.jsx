@@ -27,8 +27,14 @@ const projects = [
   {
     title: 'HTML CSS JS: TodoList App',
     description: 'Une application qui vous permet de gérer vos tâches quotidiennes avec toutes les descriptions nécessaires. Ce projet peut également faire partie du programme de CodeLoccol.',
-    url: 'https://brahmahamadou.github.io/ProjetToDoListe/',
+    url: ' https://brahmahamadou.github.io/ProjetToDoListe/',
     imageSrc: require('./images/photo4.png')
+  },
+  {
+    title: 'React : My Portofolio',
+    description: 'Mon portfolio où vous allez découvrir tous mes projets réalisés.',
+    url: 'brah-portofolio.vercel.app',
+    imageSrc: require('./images/photo6.png')
   },
 ];
 

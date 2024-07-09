@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Sidebar.css';
 import logo from './photo/mhd.jpg';
@@ -54,8 +54,8 @@ function Sidebar() {
           </a>
         </div>
         <div className="social-icon">
-          <a href="https://www.instagram.com/mahamadoubrah67" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={30} />
+          <a href="https://github.com/Brahmahamadou" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={30} />
           </a>
         </div>
         <div className="social-icon">
