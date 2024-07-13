@@ -11,7 +11,7 @@ import {
 import {
   faServer,
   faChartLine,
-  faPalette,
+  faPalette
 } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
@@ -66,7 +66,7 @@ function Home() {
               <FontAwesomeIcon icon={faChartLine} size="2x" />
             </div>
             <p>
-              Stratégies de marketing digital pour accroître la visibilité et l'engagement en ligne. Compétences en SEO, gestion de campagnes publicitaires et analyse des performances.
+              Stratégies de marketing digital pour accroître la visibilité et l'engagement en ligne.
             </p>
           </div>
           <div className="service-card">
