@@ -24,7 +24,7 @@ function Home() {
         Je peux combiner toutes ces compétences pour créer des solutions adaptées aux entreprises et aux particuliers.
         Mes expériences de travail et d'étude m'ont permis d'aborder diverses problématiques liées au développement informatique et communicationnel. 
         Passionné par la résolution de problèmes, animé par la curiosité, j'améliore continuellement mes compétences en codage pour développer des solutions innovantes. 
-        Je suis également blogueur et titulaire d'une licence en Communication. Vous pouvez m'écrire à cette
+        Je suis également blogueur, fact-cheker et titulaire d'une licence en Communication. Vous pouvez m'écrire à cette
           adresse{" "}
           <a href="mailto:mahamadoubrah672@gmail.com">
             mahamadoubrah672@gmail.com
@@ -66,7 +66,7 @@ function Home() {
               <FontAwesomeIcon icon={faChartLine} size="2x" />
             </div>
             <p>
-              Stratégies de marketing digital pour accroître la visibilité et l'engagement en ligne.
+              Marketing digital pour accroître la visibilité et l'engagement en ligne.
             </p>
           </div>
           <div className="service-card">
@@ -75,8 +75,7 @@ function Home() {
               <FontAwesomeIcon icon={faPalette} size="2x" />
             </div>
             <p>
-              Création de visuels attrayants et professionnels pour le web et l'impression. Expertise en conception de logos, bannières, affiches et autres supports graphiques.
-            </p>
+            Je possède une expérience de débutant en design graphique, principalement avec Canva et Figma. Je me spécialise dans la création d'interfaces utilisateur et de logos, et je suis passionné par le développement de designs attrayants et fonctionnels            </p>
           </div>
         </div>
       </div>
