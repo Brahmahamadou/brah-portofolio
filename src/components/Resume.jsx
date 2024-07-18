@@ -33,7 +33,7 @@ function Resume() {
           <div className="point">
             <h6 className="experience-title">Meta Front-End Developer</h6>
             <p className="experience-description">
-              J'ai suivi une formation de 7 mois en 2024, composée de 9 modules
+              J'ai suivi une formation en ligne de 7 mois en 2024, composée de 9 modules
               de certification pour la spécialisation en Front-End, autorisés
               par Meta et proposés via Coursera.{" "}
               <a

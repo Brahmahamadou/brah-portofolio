@@ -23,23 +23,33 @@ function Sidebar() {
           <div className="icon">
           <FaEnvelope className='myicon' size={20} />
           </div>
-          
+          <div className="sid">
+            <span className='mail'>EMAIL</span>
           <span className="contact-text mail">{" "}
             <a href="mailto:mahamadoubrah672@gmail.com">
               mahamadoubrah672@gmail.com
-            </a></span>
+            </a>
+            </span>
+          </div>
+         
         </div>
         <div className="contact-item">
         <div className="icon">
         <FaPhone className='myicon' size={20} />          
         </div>
-          <span className="contact-text">(+227) 92004099</span>
+        <div className="sid">
+          <span className='mail'>TELEPHONE</span>
+        <span className="contact-text">(+227) 92004099</span>
+        </div>
         </div>
         <div className="contact-item">
         <div className="icon">
         <FaMapMarkerAlt className='myicon' size={20} />         
         </div>
-          <span className="contact-text">Niamey</span>
+        <div className="sid">
+          <span className='mail'>LOCATION</span>
+        <span className="contact-text">Niamey, Niamey</span>
+        </div>
         </div>
       </div>
       <div className="social-links">

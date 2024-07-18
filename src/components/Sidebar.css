@@ -81,3 +81,10 @@
     display: none;
   }
 }
+.sid{
+  display: flex;
+  flex-direction: column;
+}
+.sid .mail{
+  color: #5e5e63;
+}
