@@ -25,6 +25,7 @@ function CustomNavbar({ setActiveItem }) {
             <Nav.Link eventKey="projects">Projects</Nav.Link>
             <Nav.Link eventKey="contacter">Contact Me</Nav.Link>
             <Nav.Link eventKey="bloging">Blog</Nav.Link>
+            <Nav.Link eventKey="login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

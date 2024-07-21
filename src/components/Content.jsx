@@ -5,6 +5,7 @@ import Service from './Services';
 import Blog from './Blog';
 import Footer from './Footer';
 import Resume from './Resume'; 
+import Login from './Login'; 
 
 function Content({ activeItem }) {
 
@@ -20,6 +21,8 @@ function Content({ activeItem }) {
         return <Service />;
       case 'bloging':
         return <Blog />;
+      case 'login':
+        return <Login />;
       default:
         return <div>Home Content</div>;
     }
