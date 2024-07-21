@@ -36,12 +36,13 @@
 .point{
     padding-top: 10px;
 }
-.cv{
+.cv2{
     background-color: #232324;
     border: none;
     border-radius: 10px;
+    width: 50%;
 }
-.cv a{
+.cv2 a{
 color: bisque;
 }
 h3{

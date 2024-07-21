@@ -82,10 +82,10 @@ function Resume() {
           </div>
         </div>
       </div>
-      <Button className="cv" variant="secondary">
+      <Button className="cv2" variant="secondary">
         <FontAwesomeIcon icon={faDownload} />{" "}
         <a
-          href="/cx.pdf"
+          href="/Mahamadou Moussa Brah.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: 'none' }}
